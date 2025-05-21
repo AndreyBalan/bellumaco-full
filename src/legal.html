@@ -1,9 +1,61 @@
 <!doctype html>
 <html lang="ru">
-    @@include('html/_head.htm',{ "title":"BELLUMACO | Главная" })
+    @@include('html/_head.htm',{ "title":"BELLUMACO | Legal" })
     <body>
         <div class="wrapper">
-            @@include('html/_header.htm',{})
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__menu menu">
+                        <a href="/">
+                            <img src="@img/logo.svg" class="header__logo" alt="Defdil" />
+                        </a>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="/" class="menu__link">Преимущества</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="/" class="menu__link">Особенности</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="/" class="menu__link">Технологии</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="/" class="menu__link">Решения </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="/" class="menu__link">Сотрудничество</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contact.html" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__btns">
+                            <button type="button" class="menu__icon icon-menu">
+                                <span></span> <span class="sr-only">Menu</span>
+                            </button>
+                            <div class="language-selector">
+                                <input
+                                    type="checkbox"
+                                    id="language-toggle"
+                                    class="language-selector__toggle" />
+                                <label for="language-toggle" class="language-selector__current">
+                                    <span class="language-selector__code">RU</span>
+                                </label>
+                                <div class="language-selector__dropdown">
+                                    <a href="/en" class="language-selector__item">
+                                        <span class="language-selector__code">EN</span>
+                                    </a>
+                                    <a href="/ar" class="language-selector__item">
+                                        <span class="language-selector__code">AR</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <main class="page">
                 <section class="legal">
                     <div class="legal__container">
