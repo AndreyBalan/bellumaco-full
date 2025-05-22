@@ -29,7 +29,7 @@
 	$mail->Subject = 'Вітання!';
 
 	//Тіло листа
-	$body = '<h1>Вам було надіслано форму з сайту Defdil.</h1>';
+	$body = '<h1>Вам було надіслано форму з сайту Bellumaco.</h1>';
 
 	if(trim(!empty($_POST['name']))){
 		$body.= "<p><strong>Name:</strong> ".$_POST['name']. "</p>";
